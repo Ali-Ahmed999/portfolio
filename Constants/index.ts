@@ -18,8 +18,8 @@ export const Skill_data = [
       height: 65,
     },
     {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
+      skill_name: "Node js",
+      Image: "/node-js.png",
       width: 80,
       height: 80,
     },
@@ -81,10 +81,7 @@ export const Skill_data = [
   ];
   
   export const Socials = [
-    {
-      name: "Instagram",
-      src: "/instagram.png",
-    },
+   
     {
       name: "Facebook",
       src: "/facebook.svg",
@@ -116,9 +113,9 @@ export const Skill_data = [
       width: 65,
       height: 65,
     },
-    {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
+     {
+      skill_name: "Shadcn",
+      Image: "/shadcn.png",
       width: 80,
       height: 80,
     },

@@ -3,8 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './component/main/Navbar'
 import StarsCanvas from './component/main/SarbackGroung'
-import Footers from './component/main/Footers'
-import Navbar2 from './component/main/Navbar2'
+
+import Footer from '@/app/component/main/Footer'
 
 
 
@@ -28,7 +28,7 @@ export default function RootLayout({
         <StarsCanvas />
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
