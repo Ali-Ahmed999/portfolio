@@ -13,18 +13,18 @@ const Projects = () => {
       </h1>
       <div className="h-full w-auto flex flex-col md:flex-row gap-10 px-10 cursor-pointer">
         <Link
-        href={"https://www.linkedin.com/in/hafiz-ali-ahmed-9537b4292"}>
-        <ProjectCard
-          src="/project2.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          href={"https://www.linkedin.com/in/hafiz-ali-ahmed-9537b4292"}>
+          <ProjectCard
+            src="/project2.png"
+            title="Modern Next.js Portfolio"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
-          </Link>
+        </Link>
         <ProjectCard
           src="/project3.png"
           title="Interactive Website Cards"
           description="Photo Album | Next.js | TypeScript | Tailwind CSS | Shadcn UI | Cloudinary"
- 
+
         />
         <ProjectCard
           src="/SpaceWebsite.png"
@@ -37,3 +37,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+

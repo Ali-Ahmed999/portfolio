@@ -67,7 +67,7 @@ const HeroContent = () => {
         className="w-ayto h-full flex justify-center items-center"
       >
         <Image
-          src="/7.jpg"
+          src="/"
           alt="work icons"
           height={500}
           width={500}
