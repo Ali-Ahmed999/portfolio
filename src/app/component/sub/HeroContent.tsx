@@ -1,3 +1,92 @@
+// "use client";
+
+// import React from "react";
+// import { motion } from "framer-motion";
+// import {
+//   slideInFromLeft,
+//   slideInFromRight,
+//   slideInFromTop,
+// } from "../../../../utils/motion";
+// import { SparklesIcon } from "@heroicons/react/24/solid";
+// import Image from "next/image";
+
+// const HeroContent = () => {
+//   return (
+//     <motion.div
+//       initial="hidden"
+//       animate="visible"
+//       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+//     >
+//       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+//         <motion.div
+//           variants={slideInFromTop}
+//           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+//         >
+//           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
+//           <h1 className="Welcome-text text-[13px]">
+//             Fullstack Developer Portfolio
+//           </h1>
+//         </motion.div>
+
+//         <motion.div
+//           variants={slideInFromLeft(0.5)}
+//           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+//         >
+//           <span>
+//             Providing
+//             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+//               {" "}
+//               the best{" "}
+//             </span>
+//             project exprience
+//           </span>
+//         </motion.div>
+
+//         <motion.p
+//           variants={slideInFromLeft(0.8)}
+//           className="text-lg text-gray-400 my-5 max-w-[600px]"
+//         >
+//           I&apos;m a Full Stack Software Engineer with experience in Website,
+//           Mobile, and Software development. Check out my projects and skills.
+//         </motion.p>
+//         <motion.a
+//           variants={slideInFromLeft(1)}
+//           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+//         >
+//           Learn More!
+//         </motion.a>
+//       </div>
+
+//       <motion.div
+//         variants={slideInFromRight(0.8)}
+//         className="w-full h-full flex justify-center items-center"
+//       >
+//          <div className="sm:hidden relative w-[650px] h-[650px]">
+//       {/* Background Image */}
+//       <Image
+//         src="/main.svg"
+//         alt="Main background"
+//         height={650}
+//         width={650}
+//         className="absolute top-0 left-0"
+//       />
+//       {/* Overlay Image */}
+//       <Image
+//         src="/mainIcons.svg"
+//         alt="Icons overlay"
+//         height={650}
+//         width={650}
+//         className="absolute top-0 left-0 opacity-80"
+//       />
+//     </div>
+//       </motion.div>
+//     </motion.div>
+//   );
+// };
+
+// export default HeroContent;
+
+
 "use client";
 
 import React from "react";
@@ -15,9 +104,10 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      {/* Left Content */}
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start sm: mt-20">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
@@ -30,7 +120,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Providing
@@ -38,20 +128,15 @@ const HeroContent = () => {
               {" "}
               the best{" "}
             </span>
-            project exprience
+            project experience
           </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-md md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">
-          Hi,
-          I&apos;m Hafiz Ali Ahmed{""}
-          </span>
-          {" "}
-           a Full Stack Software Engineer with experience in Website,
+          I&apos;m a Full Stack Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
@@ -62,20 +147,43 @@ const HeroContent = () => {
         </motion.a>
       </div>
 
+      {/* Right Content (Image Section) */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-ayto h-full flex justify-center items-center"
+        className="w-full h-full justify-center items-center hidden md:flex" // Hidden on mobile (sm) screens
       >
-        <Image
-          src="/"
-          alt="work icons"
-          height={500}
-          width={500}
-          className="rounded w-[350px]"
-        />
+        <div className="relative w-[650px] h-[650px]">
+          {/* Background Image */}
+          <Image
+            src="/main.svg"
+            alt="Main background"
+            height={450}
+            width={450}
+            className="absolute top-0 left-0"
+          />
+          {/* Overlay Image */}
+          <Image
+            src="/mainIcons.svg"
+            alt="Icons overlay"
+            height={550}
+            width={550}
+            className="absolute top-0 left-0 opacity-80"
+          />
+        </div>
+      </motion.div>
+
+      {/* Right Content (Hidden on mobile screens) */}
+      <motion.div
+        className="w-full h-full justify-center items-center sm:hidden" // Visible only on mobile (sm) screens
+      >
+         <div className="relative w-[300px] h-[300px]">
+        </div> 
       </motion.div>
     </motion.div>
   );
 };
 
 export default HeroContent;
+
+
+

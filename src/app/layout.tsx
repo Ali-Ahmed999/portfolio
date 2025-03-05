@@ -11,7 +11,7 @@ import Footer from './component/main/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hafiz Ali Portfolio',
+  title: 'Hafiz Ali | Portfolio',
   description: 'This is my portfolio',
 }
 
@@ -25,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
+        <div className="canvas-container">
         <StarsCanvas />
+        </div>
         <Navbar />
         {children}
         <Footer />

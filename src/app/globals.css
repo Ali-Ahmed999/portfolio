@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +6,15 @@
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+.canvas-container {
+  pointer-events: none;
+}
+.canvas-container {
+  position: absolute; /* or fixed */
+  z-index: -1;
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -66,4 +75,4 @@
 
 html {
   scroll-behavior: smooth;
-}
+} 
