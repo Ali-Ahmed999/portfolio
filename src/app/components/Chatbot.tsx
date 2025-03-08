@@ -22,7 +22,7 @@ const Chatbot: FC = () => {
           dragAndDrop: true,
           iconColor: "white",
           customIconSrc:
-            "https://github.com/Ali-Ahmed999/portfolio/blob/main/public/alisocial.png?raw=true",
+            "alisocial.png",
           autoWindowOpen: {
             autoOpen: true,
             openDelay: 2,
@@ -36,22 +36,22 @@ const Chatbot: FC = () => {
           tooltipTextColor: "white",
           tooltipFontSize: 16,
         },
-        disclaimer: {
-          title: "Disclaimer",
-          message:
-            'By using this chatbot, you agree to the <a target="_blank" href="https://flowiseai.com/terms">Terms & Condition</a>',
-          textColor: "black",
-          buttonColor: "#3b82f6",
-          buttonText: "Start Chatting",
-          buttonTextColor: "white",
-          blurredBackgroundColor: "rgba(0, 0, 0, 0.4)",
-          backgroundColor: "white",
-        },
+        // disclaimer: {
+        //   title: "Disclaimer",
+        //   message:
+        //     'By using this chatbot, you agree to the <a target="_blank" href="https://flowiseai.com/terms">Terms & Condition</a>',
+        //   textColor: "black",
+        //   buttonColor: "#3b82f6",
+        //   buttonText: "Start Chatting",
+        //   buttonTextColor: "white",
+        //   blurredBackgroundColor: "rgba(0, 0, 0, 0.4)",
+        //   backgroundColor: "white",
+        // },
         customCSS: ``,
         chatWindow: {
           showTitle: true,
           showAgentMessages: true,
-          title: "🤖Hafiz Ali Assistant!👈🏻",
+          title: "🤖 Hafiz Ali Assistant!👈🏻",
           welcomeMessage:
             'Hello there! This is Hafiz Ali AI assistant ready to help with any questions. How may I assist you today?"',
           errorMessage: "This is a custom error message",
@@ -70,14 +70,14 @@ const Chatbot: FC = () => {
             textColor: "#303235",
             showAvatar: true,
             avatarSrc:
-              "https://github.com/Ali-Ahmed999/portfolio/blob/main/public/alisocial.png?raw=true",
+              "/alisocial.png",
           },
           userMessage: {
             backgroundColor: "#3B81F6",
             textColor: "#ffffff",
             showAvatar: true,
             avatarSrc:
-              "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+              "/Userpic.png",
           },
           textInput: {
             placeholder: "Type your question",
