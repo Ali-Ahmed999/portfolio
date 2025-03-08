@@ -60,12 +60,12 @@ const Projects = () => {
           />
           <div className="absolute top-2 left-2 z-10">
             <Link href="https://github.com/Ali-Ahmed999" target="_blank">
-              <RxGithubLogo className="text-3xl text-white hover:text-gray-400 cursor-pointer" />
+              <RxGithubLogo className="text-3xl text-gray-400 hover:text-gray-600 cursor-pointer" />
             </Link>
           </div>
           <div className="absolute top-2 right-2 z-10">
             <Link href="https://hackathon-beryl.vercel.app/" target="_blank">
-              <FiChevronRight className="text-4xl text-white hover:text-gray-400 cursor-pointer" />
+              <FiChevronRight className="text-4xl text-gray-400 hover:text-gray-600 cursor-pointer" />
             </Link>
           </div>
         </div>
