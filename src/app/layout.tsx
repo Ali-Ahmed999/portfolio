@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from './component/main/Navbar'
-import StarsCanvas from './component/main/SarbackGroung'
-import Footer from './component/main/Footer'
-
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from './component/main/Navbar';
+import StarsCanvas from './component/main/SarbackGroung';
+import Footer from './component/main/Footer';
+import Chatbot from './components/Chatbot';
 
 
 
@@ -30,6 +30,7 @@ export default function RootLayout({
         </div>
         <Navbar />
         {children}
+        <Chatbot />
         <Footer />
       </body>
     </html>
