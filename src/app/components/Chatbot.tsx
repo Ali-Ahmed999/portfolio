@@ -73,8 +73,8 @@ const Chatbot: FC = () => {
               "/alisocial.png",
           },
           userMessage: {
-            backgroundColor: "#3B81F6",
-            textColor: "#ffffff",
+            backgroundColor: "#f7f8ff",
+            textColor: "#303235",
             showAvatar: true,
             avatarSrc:
               "/Userpic.png",
@@ -83,7 +83,7 @@ const Chatbot: FC = () => {
             placeholder: "Type your question",
             backgroundColor: "#ffffff",
             textColor: "#303235",
-            sendButtonColor: "#3B81F6",
+            sendButtonColor: "#50555e",
             maxChars: 70,
             maxCharsWarningMessage:
               "You exceeded the characters limit. Please input less than 70 characters.",
