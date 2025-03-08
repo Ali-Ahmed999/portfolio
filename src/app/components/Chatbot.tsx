@@ -77,7 +77,7 @@ const Chatbot: FC = () => {
             textColor: "#303235",
             showAvatar: true,
             avatarSrc:
-              "/Userpic.png",
+              "/User3.png",
           },
           textInput: {
             placeholder: "Type your question",
