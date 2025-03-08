@@ -54,7 +54,7 @@ const Projects = () => {
         {/* Project 3 */}
         <div className="relative flex flex-col items-center">
           <ProjectCard
-            src="/Ecommerce.png"
+            src="/ecommerce.png"
             title="E-commerce Website"
             description="E-commerce Website | Next.js | TypeScript | Tailwind CSS | Shadcn UI"
           />
