@@ -17,8 +17,8 @@ const Projects = () => {
         <div className="relative flex flex-col items-center">
           <ProjectCard
             src="/project2.png"
-            title="Modern Next.js Portfolio"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            title="Next.js Portfolio"
+            description="Portfolio Website | Next.js | TypeScript | Tailwind CSS | Shadcn UI"
           />
           <div className="absolute top-2 left-2 z-10">
             <Link href="https://github.com/Ali-Ahmed999" target="_blank">
@@ -26,7 +26,7 @@ const Projects = () => {
             </Link>
           </div>
           <div className="absolute top-2 right-2 z-10">
-            <Link href="#projects">
+            <Link href="https://my-portfolio-project-vert.vercel.app/" target="_blank">
               <FiChevronRight className="text-4xl text-white hover:text-gray-400 cursor-pointer" />
             </Link>
           </div>
@@ -36,16 +36,16 @@ const Projects = () => {
         <div className="relative flex flex-col items-center">
           <ProjectCard
             src="/project3.png"
-            title="Interactive Website Cards"
+            title="Photo Gallery App"
             description="Photo Album | Next.js | TypeScript | Tailwind CSS | Shadcn UI | Cloudinary"
           />
           <div className="absolute top-2 left-2 z-10">
-            <Link href="https://github.com/Ali-Ahmed999" target="_blank">
+            <Link href="https://github.com/Ali-Ahmed999/cloudinary-photo-gallery-app" target="_blank">
               <RxGithubLogo className="text-3xl text-white hover:text-gray-400 cursor-pointer" />
             </Link>
           </div>
           <div className="absolute top-2 right-2 z-10">
-            <Link href="#projects">
+            <Link href="https://cloudinary-photo-gallery-88ashyb70-hafiz-ali-ahmeds-projects.vercel.app/gallery" target="_blank">
               <FiChevronRight className="text-4xl text-white hover:text-gray-400 cursor-pointer" />
             </Link>
           </div>
@@ -54,9 +54,9 @@ const Projects = () => {
         {/* Project 3 */}
         <div className="relative flex flex-col items-center">
           <ProjectCard
-            src="/SpaceWebsite.png"
-            title="Space Themed Website"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            src="/Ecommerce.png"
+            title="E-commerce Website"
+            description="E-commerce Website | Next.js | TypeScript | Tailwind CSS | Shadcn UI"
           />
           <div className="absolute top-2 left-2 z-10">
             <Link href="https://github.com/Ali-Ahmed999" target="_blank">
@@ -64,7 +64,7 @@ const Projects = () => {
             </Link>
           </div>
           <div className="absolute top-2 right-2 z-10">
-            <Link href="#projects">
+            <Link href="https://hackathon-beryl.vercel.app/" target="_blank">
               <FiChevronRight className="text-4xl text-white hover:text-gray-400 cursor-pointer" />
             </Link>
           </div>
