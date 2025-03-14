@@ -162,7 +162,7 @@ import Image from "next/image";
 const Encryption = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-full h-full relative">
-      <div className="absolute w-auto top-[15%] sm:top-[25%] md:top-[10%] lg:top-[3%] z-[5]">
+      <div className="absolute w-auto top-[15%] sm:top-[25%] md:top-[10%] lg:top-[-5%] z-[5]">
         <motion.div
           variants={slideInFromTop}
           className="text-[30px] font-medium text-center text-gray-200 sm:text-[40px] md:text-[50px] lg:text-[60px]"
@@ -194,8 +194,8 @@ const Encryption = () => {
           />
         </div>
 
-        <div className="Welcome-box px-[10px] py-[2px] sm:px-[15px] sm:py-[4px] md:px-[20px] md:py-[6px] z-[20] border my-[10px] sm:my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[10px] sm:text-[12px] md:text-[14px]">
+        <div className="Welcome-box px-[10px] py-[2px] sm:px-[15px] sm:py-[4px] md:px-[40px] md:py-[10px] z-[20] border my-[10px] sm:my-[20px] border-[#7042f88b] opacity-[0.9]">
+          <h1 className="Welcome-text text-[10px] sm:text-[12px] md:text-[20px]">
             Encryption
           </h1>
         </div>

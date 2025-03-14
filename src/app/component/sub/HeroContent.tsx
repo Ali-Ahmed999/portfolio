@@ -107,7 +107,7 @@ const HeroContent = () => {
       className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
       {/* Left Content */}
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start sm: mt-20">
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start sm:mt-10">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
