@@ -5,7 +5,7 @@ import { BiPencil } from "react-icons/bi"; // Feather pen icon
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md border-[#7042f861] z-50 px-10">
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Navbar Title with Logo */}
         <div className="flex items-center gap-2 hidden sm:flex">

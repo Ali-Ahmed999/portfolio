@@ -15,11 +15,12 @@ const Skills = () => {
     <section
       id="skills"
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      {/* Skill Data Row */}
+      <div className="flex flex-wrap items-center justify-center mt-4 gap-5">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -31,16 +32,8 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <Image
-              alt="hero"
-              src={require("")}
-              width={300}
-              height={300}
-            />
-          </div> */}
-
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      {/* Frontend Skills Row */}
+      <div className="flex flex-wrap items-center justify-center mt-4 gap-5">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -51,7 +44,9 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+
+      {/* Backend Skills Row */}
+      <div className="flex flex-wrap items-center justify-center mt-4 gap-5">
         {Backend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -62,7 +57,9 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+
+      {/* Full Stack Skills Row */}
+      <div className="flex flex-wrap items-center justify-center mt-4 gap-5">
         {Full_stack.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -73,7 +70,9 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+
+      {/* Other Skills Row */}
+      <div className="flex flex-wrap items-center justify-center mt-4 gap-5">
         {Other_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -85,6 +84,7 @@ const Skills = () => {
         ))}
       </div>
 
+      {/* Background Video */}
       <div className="w-full h-full absolute">
         <div className="w-full h-full z-[-10] opacity-50 absolute flex items-center justify-center bg-cover">
           <video
@@ -103,3 +103,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
