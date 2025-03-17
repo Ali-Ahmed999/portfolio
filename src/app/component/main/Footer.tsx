@@ -6,10 +6,9 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-
 const Footer = () => {
   return (
-    <footer className="w-full h-full text-gray-200 p-6 bg-gray-900">
+    <footer className="w-full h-full text-gray-200 p-6 shadow-lg border shadow-[#2A0E61]/50 bg-[#03441417] border-[#2A0E61] backdrop-blur-md">
       <div className="flex flex-col items-center justify-center mx-auto">
         <div className="w-full flex flex-col sm:flex-row items-center justify-between sm:justify-around flex-wrap gap-6 sm:gap-8">
           {/* Community Section */}
