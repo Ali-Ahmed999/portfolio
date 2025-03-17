@@ -176,21 +176,21 @@ const Encryption = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col items-center justify-center translate-y-[-5px] sm:translate-y-[-5px] md:translate-y-[-15px] absolute z-[30] w-auto h-auto">
+      <div className="flex flex-col items-center justify-center translate-y-[-5px] sm:translate-y-[-10px] md:translate-y-[-15px] absolute z-[30] w-auto h-auto">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto ">
           <Image
             src="/LockTop.png"
             alt="Lock top"
             width={50}
             height={50}
-            className="w-[30px] sm:w-[40px] md:w-[50px] translate-y-[-5px] sm:translate-y-[-10px] md:translate-y-[-15px] transition-all duration-200 group-hover:translate-y-11 "
+            className="w-[30px] sm:w-[40px] md:w-[50px] translate-y-[6px] sm:translate-y-[-10px] md:translate-y-[10px] transition-all duration-200 group-hover:translate-y-11 "
           />
           <Image
             src="/LockMain.png"
             alt="Lock Main"
             width={70}
             height={70}
-            className="w-[50px] sm:w-[60px] md:w-[70px] z-20 mt-0"
+            className="w-[50px] sm:w-[50px] md:w-[70px] z-20 mt-0"
           />
         </div>
 
