@@ -15,9 +15,10 @@
 //     <motion.div
 //       initial="hidden"
 //       animate="visible"
-//       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+//       className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
 //     >
-//       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+//       {/* Left Content */}
+//       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start sm:mt-10">
 //         <motion.div
 //           variants={slideInFromTop}
 //           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
@@ -30,7 +31,7 @@
 
 //         <motion.div
 //           variants={slideInFromLeft(0.5)}
-//           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+//           className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
 //         >
 //           <span>
 //             Providing
@@ -38,16 +39,16 @@
 //               {" "}
 //               the best{" "}
 //             </span>
-//             project exprience
+//             project experience
 //           </span>
 //         </motion.div>
 
 //         <motion.p
 //           variants={slideInFromLeft(0.8)}
-//           className="text-lg text-gray-400 my-5 max-w-[600px]"
+//           className="text-md md:text-lg text-gray-400 my-5 max-w-[600px]"
 //         >
 //           I&apos;m a Full Stack Software Engineer with experience in Website,
-//           Mobile, and Software development. Check out my projects and skills.
+//           AI Agents and passionate about AI stuff. Check out my projects and skills.
 //         </motion.p>
 //         <motion.a
 //           variants={slideInFromLeft(1)}
@@ -57,28 +58,37 @@
 //         </motion.a>
 //       </div>
 
+//       {/* Right Content (Image Section) */}
 //       <motion.div
 //         variants={slideInFromRight(0.8)}
-//         className="w-full h-full flex justify-center items-center"
+//         className="w-full h-full justify-center items-center hidden md:flex" // Hidden on mobile (sm) screens
 //       >
-//          <div className="sm:hidden relative w-[650px] h-[650px]">
-//       {/* Background Image */}
-//       <Image
-//         src="/main.svg"
-//         alt="Main background"
-//         height={650}
-//         width={650}
-//         className="absolute top-0 left-0"
-//       />
-//       {/* Overlay Image */}
-//       <Image
-//         src="/mainIcons.svg"
-//         alt="Icons overlay"
-//         height={650}
-//         width={650}
-//         className="absolute top-0 left-0 opacity-80"
-//       />
-//     </div>
+//         <div className="relative w-[650px] h-[650px]">
+//           {/* Background Image */}
+//           <Image
+//             src="/main.svg"
+//             alt="Main background"
+//             height={450}
+//             width={450}
+//             className="absolute top-0 left-0"
+//           />
+//           {/* Overlay Image */}
+//           <Image
+//             src="/mainIcons.svg"
+//             alt="Icons overlay"
+//             height={550}
+//             width={550}
+//             className="absolute top-0 left-0 opacity-80"
+//           />
+//         </div>
+//       </motion.div>
+
+//       {/* Right Content (Hidden on mobile screens) */}
+//       <motion.div
+//         className="w-full h-full justify-center items-center sm:hidden" // Visible only on mobile (sm) screens
+//       >
+//          <div className="relative w-[300px] h-[300px]">
+//         </div> 
 //       </motion.div>
 //     </motion.div>
 //   );
@@ -89,7 +99,7 @@
 
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -99,12 +109,12 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
-const HeroContent = () => {
+const HeroContent: FC = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-48 w-full z-[20]"
     >
       {/* Left Content */}
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start sm:mt-10">
@@ -150,10 +160,9 @@ const HeroContent = () => {
       {/* Right Content (Image Section) */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full justify-center items-center hidden md:flex" // Hidden on mobile (sm) screens
+        className="w-full h-full justify-center items-center hidden md:flex"
       >
         <div className="relative w-[650px] h-[650px]">
-          {/* Background Image */}
           <Image
             src="/main.svg"
             alt="Main background"
@@ -161,7 +170,6 @@ const HeroContent = () => {
             width={450}
             className="absolute top-0 left-0"
           />
-          {/* Overlay Image */}
           <Image
             src="/mainIcons.svg"
             alt="Icons overlay"
@@ -172,18 +180,13 @@ const HeroContent = () => {
         </div>
       </motion.div>
 
-      {/* Right Content (Hidden on mobile screens) */}
-      <motion.div
-        className="w-full h-full justify-center items-center sm:hidden" // Visible only on mobile (sm) screens
-      >
-         <div className="relative w-[300px] h-[300px]">
-        </div> 
+      {/* Right Content (Mobile - Hidden on larger screens) */}
+      <motion.div className="w-full h-full justify-center items-center sm:hidden">
+        <div className="relative w-[300px] h-[300px]"></div>
       </motion.div>
     </motion.div>
   );
 };
 
 export default HeroContent;
-
-
 
