@@ -62,22 +62,22 @@ const HeroContent: FC = () => {
         variants={slideInFromRight(0.8)}
         className="w-full h-full justify-center items-center hidden md:flex"
       >
-        <div className="relative w-[650px] h-[650px]">
+        {/* <div className="relative w-[650px] h-[650px]">
           <Image
-            src="/main.svg"
-            alt="Main background"
+            src="/"
+            alt=""
             height={450}
             width={450}
             className="absolute top-0 left-0"
           />
           <Image
-            src="/mainIcons.svg"
-            alt="Icons overlay"
+            src="/"
+            alt=""
             height={550}
             width={550}
             className="absolute top-0 left-0 opacity-80"
           />
-        </div>
+        </div> */}
       </motion.div>
 
       {/* Right Content (Mobile - Hidden on larger screens) */}
