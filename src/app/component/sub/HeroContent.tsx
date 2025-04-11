@@ -46,7 +46,7 @@ const HeroContent: FC = () => {
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-md md:text-lg text-gray-400 my-5 max-w-[600px]"
-        >
+        > 
           I&apos;m a Full Stack Software Engineer with experience in web development and AI agent design, and I have a deep passion for artificial intelligence. Check out my projects and skills.
         </motion.p>
         <motion.a

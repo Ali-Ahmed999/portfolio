@@ -31,7 +31,7 @@ const Chatbot: FC = () => {
         },
         tooltip: {
           showTooltip: true,
-          tooltipMessage: "Explore Hafiz Ali👋!",
+          tooltipMessage: "Hafiz Ali👋",
           tooltipBackgroundColor: "black",
           tooltipTextColor: "white",
           tooltipFontSize: 16,
