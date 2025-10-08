@@ -88,10 +88,10 @@ const Chatbot: FC = () => {
             maxCharsWarningMessage:
               "You exceeded the characters limit. Please input less than 70 characters.",
             autoFocus: true,
-            sendMessageSound: true,
-            sendSoundLocation: "send_message.mp3",
-            receiveMessageSound: true,
-            receiveSoundLocation: "receive_message.mp3",
+            // sendMessageSound: true,
+            // sendSoundLocation: "send_message.mp3",
+            // receiveMessageSound: true,
+            // receiveSoundLocation: "receive_message.mp3",
           },
           feedback: {
             color: "#303235",

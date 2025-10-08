@@ -240,12 +240,57 @@ export const Skill_data = [
   
   
   
-  export const Other_skill = [
-    {
-      skill_name: "Python",
-      Image: "/python.jpg",
-      width: 60,
-      height: 60,
-    },
-  ];
+export const Other_skill = [
+  {
+    skill_name: "Python",
+    Image: "/python.jpg",
+    width: 60,
+    height: 60,
+  },
+];
+
+export const AI_skill = [
+  {
+    skill_name: "LangChain",
+    Image: "/Features-of-LangChain.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "n8n",
+    Image: "/node-js.png", // TODO: Replace with n8n logo
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "AI Calling Agents",
+    Image: "/Fastapi.png", // TODO: Replace with AI Agents icon
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Python",
+    Image: "/python.jpg",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "FastAPI",
+    Image: "/Fastapi.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Node.js",
+    Image: "/node-js.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "TypeScript",
+    Image: "/ts.png",
+    width: 80,
+    height: 80,
+  },
+];
   
